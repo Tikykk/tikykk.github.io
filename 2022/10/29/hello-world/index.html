@@ -20,8 +20,8 @@
   </title>
 
   
-    <link rel="apple-touch-icon" href="/images/favicon.png">
-    <link rel="icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/touxiang.PNG">
+    <link rel="icon" href="/images/touxiang.PNG">
   
 
   <!-- Raleway-Font -->
@@ -32,16 +32,20 @@
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
   <!-- 代码块风格 -->
   
+    
+<link rel="stylesheet" href="/css/figcaption/mac-block.css">
+
+  
 
   <!-- jquery3.3.1 -->
   
-    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   
 
   <!-- fancybox -->
   
-    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
-    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   
   
 <script src="/js/fancybox.js"></script>
@@ -68,32 +72,40 @@
     <a href="/">
       <!-- 头像取消懒加载，添加no-lazy -->
       
-        <img src="/images/avatar.png" alt="">
+        <img src="/images/touxiang.PNG" alt="">
       
     </a>
-    <div class="nickname"><a href="/">Oranges</a></div>
+    <div class="nickname"><a href="/">Tikissvian</a></div>
   </div>
   <div class="navbar">
     <ul>
       
         <li class="nav-item" data-path="/">
-          <a href="/">Home</a>
+          <a href="/">主页</a>
         </li>
       
         <li class="nav-item" data-path="/archives/">
-          <a href="/archives/">Archives</a>
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">分类</a>
         </li>
       
         <li class="nav-item" data-path="/tags/">
-          <a href="/tags/">Tags</a>
+          <a href="/tags/">标签</a>
         </li>
       
         <li class="nav-item" data-path="/friends/">
-          <a href="/friends/">Friends</a>
+          <a href="/friends/">朋友</a>
         </li>
       
         <li class="nav-item" data-path="/about/">
-          <a href="/about/">About</a>
+          <a href="/about/">关于</a>
+        </li>
+      
+        <li class="nav-item" data-path="/wiki/">
+          <a href="/wiki/">留言</a>
         </li>
       
     </ul>
@@ -130,7 +142,7 @@
   <!-- clipboard -->
 
   
-    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+    <script async type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
   
   
 <script src="/js/codeCopy.js"></script>
@@ -219,6 +231,31 @@
 
 
 
+  
+    <script async type="text/javascript" src='https://cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js' onload="loadValineSuc(this)"></script>
+  
+
+  <div id="vcomments"></div>
+
+  <script>
+    function loadValineSuc() {
+      new Valine({
+        el: '#vcomments',
+        appId: 'hwFIJXj85SjQAkeJDHPJsglV-gzGzoHsz',
+        appKey: 'g9lhKzpw2dpDLou7dkaVyICu',
+        placeholder: 'Welcome!',
+        avatar: 'retro',
+        lang: 'en'
+      })
+    }
+  </script>
+
+    <style>
+      .comments-container .v .vempty {
+        display: none!important;
+      }
+    </style>
+
 
 
 
@@ -233,8 +270,32 @@
     <ul>
       
         <li>
-          <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
-            <i class="iconfont icon-github"></i>
+          <a title="weixin" href="">
+            <i class="iconfont icon-weixin"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="qq" href="">
+            <i class="iconfont icon-qq"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href="">
+            <i class="iconfont icon-youxiang"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="zhihu" href="">
+            <i class="iconfont icon-zhihu"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="erweima" href="">
+            <i class="iconfont icon-erweima1688"></i>
           </a>
         </li>
       
@@ -244,14 +305,14 @@
     
     <div class="footer-more">
       
-        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © 2022 Oranges</a>
+        <a target="_blank" rel="noopener" href="https://www.tikissvian.cloud">Copyright © 2022 Tiki</a>
         
     </div>
   
     
     <div class="footer-more">
       
-        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        <a target="_blank" rel="noopener" href="https://www.tikissvian.com/">Theme by vian | Powered by Tiki</a>
         
     </div>
   
@@ -288,7 +349,7 @@
           </a>
         </span>
         
-          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+          <input type="text" class="search-input" id="search-input" placeholder="来啊打我呀">
         
         <span class="search-close-icon" id="search-close-icon">
           <a href="javascript: void(0)">
